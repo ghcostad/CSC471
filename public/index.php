@@ -11,4 +11,5 @@ define('CONTROLLER', ROOT . 'src' . DIRECTORY_SEPARATOR . 'controller' . DIRECTO
 $modules = [ROOT, APP, CORE, CONTROLLER, DATA];
 
 set_include_path(get_include_path() . PATH_SEPARATOR . implode(PATH_SEPARATOR, $modules));
-var_dump(get_include_path());
+spl_autoload_register('spl_autoload', false);
+var_dump($SERVER['REQUEST_URI']);
