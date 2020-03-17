@@ -1,0 +1,105 @@
+#main-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    background: black;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+    color: white;
+}
+.input_form {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.input_form label {
+    font-weight: bold;
+}
+
+.inputvalues {
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#add_button {
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    font-size: 18px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#update_button {
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    font-size: 18px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#delete_button {
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    font-size: 18px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#display_button {
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    font-size: 18px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#back_button {
+    color: white;
+    margin: 10px auto;
+    padding: 3px;
+    text-align: center;
+    width: 15%;
+    font-size: 12px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+table, th, td {
+    border: 1px solid white;
+}
+th, td {
+    padding: 10px;
+}

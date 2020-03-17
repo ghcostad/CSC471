@@ -1,15 +1,28 @@
 <?php
+require 'sql_config.php';
+?>
 
-define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
-define('APP', ROOT . 'src' . DIRECTORY_SEPARATOR);
-define('VIEW', ROOT . 'src' . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR);
-define('MODEL', ROOT . 'src' . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR);
-define('DATA', ROOT . 'src' . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR);
-define('CORE', ROOT . 'src' . DIRECTORY_SEPARATOR . 'core' . DIRECTORY_SEPARATOR);
-define('ADAPTER', ROOT . 'src' . DIRECTORY_SEPARATOR . 'adapter' . DIRECTORY_SEPARATOR);
-define('CONTROLLER', ROOT . 'src' . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR);
-$modules = [ROOT, APP, CORE, CONTROLLER, DATA];
-
-set_include_path(get_include_path() . PATH_SEPARATOR . implode(PATH_SEPARATOR, $modules));
-spl_autoload_register('spl_autoload', false);
-var_dump($SERVER['REQUEST_URI']);
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DataBase Main</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+    </head>
+    <body style="background-color:#404040;">
+        <div id="main-wrapper">
+            <center>
+                <h2>Database Main Menu</h2>
+                <input type="submit" id="add_button" value="Add Employee" onClick="document.location.href = 'insert_employee.php'"/><br>
+                <input type="submit" id="update_button" value="Update Employee" onClick="document.location.href = 'update_employee.php'"/><br>
+                <input type="submit" id="delete_button" value="Delete Employee" onClick="document.location.href = 'delete_employee.php'"/><br>
+                <input type="submit" id="display_button" value="View All Employees" onClick="document.location.href = 'display_employees.php'"/><br>
+            </center>
+        </div>
+        <div>
+            <center>
+                <p>UNCG CSC 471-Gabriel Costa de Oliveira 2020</p>
+            </center>
+        </div>    
+    </body>
+</html>
